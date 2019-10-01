@@ -1,0 +1,19 @@
+{
+  "name": "OmniStack-9-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jailsonsf/OmniStack-9-backend.git",
+  "author": "jailsonsf <jailsonsoares002@gmail.com>",
+  "license": "MIT",
+
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}
