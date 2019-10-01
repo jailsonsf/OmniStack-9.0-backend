@@ -15,3 +15,10 @@ app.use(express.json());
 app.use(routes);
 
 app.listen(3333);
+
+
+// GET, POST, PUT, DELETE
+
+// req.query = filtro
+// req.params = parametros, para editar e deletar
+// req.body = corpo da requisição, para criar e editar
