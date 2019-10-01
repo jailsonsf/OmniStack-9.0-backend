@@ -1,9 +1,24 @@
 const express = require('express');
+const mongoose = require('mongoose');
+
+const routes = require('./routes');
 
 const app = express();
 
-app.get('/', (req, res) => {
-	return res.json({message: 'hello world'});
+require('dotenv/config');
+mongoose.connect(process.env.MONGO_URI, {
+	useNewUrlParser: true,
+	useUnifiedTopology: true,
 })
 
+app.use(express.json());
+app.use(routes);
+
 app.listen(3333);
+
+
+// GET, POST, PUT, DELETE
+
+// req.query = filtro
+// req.params = parametros, para editar e deletar
+// req.body = corpo da requisição, para criar e editar
